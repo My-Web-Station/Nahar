@@ -25,7 +25,7 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
@@ -45,10 +45,12 @@
     <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
     <nav id="navbar" class="navbar">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li class="dropdown"><a href="#" class="active"><span>Corporate Profile</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+        <li><a href="index.html" class="active">Home</a></li>
+        
+        <li><a href="https://devat-ecommerce.herokuapp.com/" target="_blank" class="active">Shop Now</a></li>
+        <li class="dropdown"><a href="#"><span>Corporate Profile</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
           <ul>
-            <li><a href="about.html" >About Us</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li><a href="manage.html">Management</a></li>
             <li><a href="phil.html">Our philosophy</a></li>
             <li><a href="grp.html">Group Performance</a></li>
@@ -80,10 +82,10 @@
     <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/breadcrumbs.jpg');">
       <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
-        <h2>Our Philosophy</h2>
+        <h2>Company Performance</h2>
         <ol>
           <li><a href="index.html">Home</a></li>
-          <li>Our Philosophy</li>
+          <li>Company Performance</li>
         </ol>
 
       </div>
@@ -95,44 +97,182 @@
 
         <div class="row position-relative">
 
-         
+          
+          
 
           <div class="col-lg-12">
             
             <div class="our-story">
               
-              <p><i>At Nahar, each company continues to practice good Corporate Governance. The Group firmly believes that good Corporate Governance is the key to success in business. The Group’s corporate philosophy envisages creation and maximization of Shareholder’s/Stake holder's wealth while observing the highest levels of transparency and accountability.</i></p>	
-                
-              <p>
-                <b>Code of Conduct for Board Members and Senior Management</b>
-                
-                At Nahar, each company is committed to conduct its business in accordance with the applicable laws, rules and regulations and the highest standards of transparency. The herein mentioned code of conduct, applies to all the Directors and Senior Managers of the Company and sets forth specific guidelines for the performance of their professional duties/responsibilities.</p>
-                 
-                <p>
-                <b>Compliance with Laws, Rules and Regulations</b>
-                All Directors and Senior Management Personnel shall act in the interest of the company and shall comply with all the applicable laws, rules and regulations of the relevant regulatory and other authorities as may be applicable to such Directors and Senior Management Personnel in their individual capacities.</p>
-                 
-                <p><b>Conflict of Interest</b>
-                No Director or Senior Management Personnel shall engage in any business or activity or enter into any relationship which might result in conflict of interest with that of the company unless he/she makes full disclosure of all the facts and circumstances to the Audit Committee and obtains written approval of Chairman or Managing Director of the company.</p>
-                 
-                <p><b>Security Transactions/Confidential Information</b>
-                All Directors and Senior Management Personnel shall safeguard the confidentiality of all the information that they become privy to in connection with the company’s business and shall not derive any benefit or assist others to derive any benefit from such confidential information which is not in the public domain and thus, continues to be “insider" information.</p>
-                 
-                <p><b>Protecting company's assets</b>
-                All Directors and Senior Management/Personnel shall protect the company’s assets and ensure their efficient use for the conduct of Company’s business.</p>
-                 
-                <p><b>Disclosures</b>
-                All Directors and Senior Management Personnel shall disclose all the financial/commercial transactions in which they might be or deemed to be involved or interested either himself/herself or through their relatives as defined in the Act.</p>
               
-              
+              <table>
+                <tr>
+                  <th>Particulars</th>
+                  <th>Group 2019-20</th>
+                  <th>Group 2018-19</th>
+                  <th>Group 2017-18</th>
+                  <th>Group 2016-17</th>
+                  <th>Group 2015-16</th>
+                  <th>Group 2014-15</th>
+                </tr>
+                <tr>
+                  <td>Total Operating Income (TOI)</td>
+                  <td>5825.31</td>
+                  <td>6464.63</td>
+                  <td>6161.87</td>
+                  <td>6155.49</td>
+                  <td>6300.89	</td>
+                  <td>6552.46</td>                 
+                </tr>
+                <tr>
+                  <td>Export Sales (INCLUDED In TOI)</td>
+                  <td>1125.00</td>
+                  <td>1398.24</td>
+                  <td>1267.16</td>
+                  <td>1351.13</td>
+                  <td>1395.48</td>
+                  <td>1515.40</td>
+                </tr>
+                <tr>
+                  <td>Profit Before Interest, Depreciation(PBDIT)</td>
+                  <td>458.75</td>
+                  <td>659.97</td>
+                  <td>555.36</td>
+                  <td>767.41</td>
+                  <td>902.42</td>
+                  <td>976.93</td>
+                </tr>
+                <tr>
+                  <td>Profit After Tax</td>
+                  <td>17.93</td>
+                  <td>126.98</td>
+                  <td>76.60</td>
+                  <td>228.36</td>
+                  <td>243.71</td>
+                  <td>203.50</td>
+                </tr>
+                <tr>
+                  <td>Cash Accrual (PBT + Dep.)</td>
+                  <td>269.22</td>
+                  <td>483.68</td>
+                  <td>380.99</td>
+                  <td>602.36</td>
+                  <td>690.82</td>
+                  <td>704.96</td>
+                </tr>
+                <tr>
+                  <td>Investments</td>                  					
+                  <td>804.30</td>
+                  <td>1058.18</td>
+                  <td>852.87</td>
+                  <td>812.73</td>
+                  <td>805.27</td>
+                  <td>749.71</td>
+                </tr>
+                <tr>
+                  <td>Share Holder Funds</td>                  					
+                  <td>3483.29</td>
+                  <td>3624.66</td>
+                  <td>3416.94</td>
+                  <td>3368.33</td>
+                  <td>3149.57</td>
+                  <td>2916.33</td>
+                </tr>
+                <tr>
+                  <td>Debt Equity Ratio</td>                  					
+                  <td>0.11</td>
+                  <td>0.10</td>
+                  <td>0.19</td>
+                  <td>0.23</td>
+                  <td>0.29</td>
+                  <td>0.41</td>
+                </tr>
+                <tr>
+                  <td>Current Ratio</td>                  					
+                  <td>1.39</td>
+                  <td>1.32</td>
+                  <td>1.38</td>
+                  <td>2.12</td>
+                  <td>1.94</td>
+                  <td>1.51</td>
+                </tr>
+              </table>
+              <br>
+              <p>Financial Indicators of Nahar Group (USD in Millions) (Exchange Rate Rs. 75.26/- per USD)</p>
           </div>
-
+          <h3>Some Graphical Data</h3>
+          <div>
+            <img src="assets/img/Textiles/chart2.png">
+          </div>
+          <div>
+            <img src="assets/img/Textiles/chart3.png">
+          </div>
+          
         </div>
-        
+             
+
+
       </div>
     </section>
     
-      
+    <!-- End About Section -->
+
+    <!-- ======= Stats Counter Section ======= -->
+    <section id="stats-counter" class="stats-counter section-bg">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="500000" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Satisfied Customers</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-box color-green flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="1463000" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Products Sold</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-people color-pink flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="37000" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Hard Workers</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-globe color-blue flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="190" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Exported to countries</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Stats Counter Section -->
+
+
+
+    
 
     
 
@@ -170,7 +310,7 @@
             <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#">About us</a></li>
-              <li><a href="#">Services</a></li>
+              <li><a href="#">Products</a></li>
               <li><a href="#">Terms of service</a></li>
               <li><a href="#">Privacy policy</a></li>
             </ul>
@@ -179,11 +319,11 @@
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">Web Development</a></li>
-              <li><a href="#">Product Management</a></li>
+              <li><a href="#">Textiles</a></li>
+              <li><a href="#">Woollens</a></li>
+              <li><a href="#">Fashions</a></li>
               <li><a href="#">Marketing</a></li>
-              <li><a href="#">Graphic Design</a></li>
+              <li><a href="#">Fabric Design</a></li>
             </ul>
           </div><!-- End footer links column-->
 
