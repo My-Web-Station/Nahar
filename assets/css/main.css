@@ -47,6 +47,31 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Scrollbar customization
+---------------------------------------------------------------*/
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(0, 0, 0); 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #08d2ff; 
+}
+
+/*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
 section {
@@ -784,6 +809,24 @@ section {
   border-color: var(--color-primary);
 }
 
+/*--------------------------------------------------------------
+# Tables
+---------------------------------------------------------------*/
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
